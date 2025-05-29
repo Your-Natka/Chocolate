@@ -224,6 +224,7 @@ button {
   justify-content: space-between;
 }
 .header-nav {
+  
 }
 .header-socials {
   display: flex;
@@ -367,6 +368,9 @@ button {
   | Hero styles
   |============================
 */
+main {
+  margin-top: 70px; /* або інше значення, що відповідає висоті header */
+}
 .hero {
   padding-bottom: 80px;
 }
@@ -1500,6 +1504,11 @@ input[type='checkbox']:checked + .agreement-checkbox {
   flex-direction: column;
   height: 100%;
 }
+@media only screen and (min-width: 1158px) {
+  .header-menu-wrap {
+    display: none !important;
+  }
+}
 .header-menu-wrap {
   position: fixed;
   top: 0;
@@ -1559,6 +1568,7 @@ input[type='checkbox']:checked + .agreement-checkbox {
 
 .mobile-menu {
   margin-bottom: auto;
+  
 }
 
 .mobile-menu-item:not(:last-child) {
