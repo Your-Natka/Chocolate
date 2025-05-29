@@ -368,9 +368,6 @@ button {
   | Hero styles
   |============================
 */
-main {
-  margin-top: 70px; /* або інше значення, що відповідає висоті header */
-}
 .hero {
   padding-bottom: 80px;
 }
