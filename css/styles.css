@@ -202,7 +202,7 @@ address {
 
 /**
   |============================
-  | Header styles
+  | HEADER STYLES
   |============================
 */
 @media only screen and (max-width: 767.98px) {
@@ -357,7 +357,7 @@ address {
 
 /**
   |============================
-  | Hero styles
+  | HERO STYLES
   |============================
 */
 main {
@@ -460,7 +460,6 @@ main {
 }
 .hero-scroll-btn:hover,
 .hero-scroll-btn:focus {
-  background-color: var(--light-cl);
   color: var(--accent-cl);
 }
 
@@ -478,6 +477,7 @@ main {
 .hero-scroll-btn:hover .hero-scroll-ellipse,
 .hero-scroll-btn:focus .hero-scroll-ellipse {
   background-color: var(--accent-cl);
+  color: var(--light-cl);
 }
 
 .hero-scroll-icon {
@@ -489,7 +489,7 @@ main {
 
 .hero-scroll-btn:hover .hero-scroll-icon,
 .hero-scroll-btn:focus .hero-scroll-icon {
-  fill: var(--light-bg);
+  color: var(--light-cl);
 }
 
 @media screen and (min-width: 335px) {
@@ -623,7 +623,7 @@ main {
 
 /**
   |============================
-  | Benefits styles
+  | BENEFITS STYLES
   |============================
 */
 .benefits {
@@ -699,7 +699,7 @@ main {
 
 /**
   |============================
-  | Ingridients styles
+  | INGREDIENTS STYLES
   |============================
 */
 .ingridients {
@@ -719,7 +719,6 @@ main {
 .ingridients-list-img {
   padding-left: 28px;
   padding-top: 28px;
-
   margin-bottom: 36px;
 }
 .ingridients-list-item:nth-child(4n + 3) {
@@ -813,7 +812,6 @@ main {
 
 @media screen and (min-width: 736px) {
   .ingridients {
-    padding-top: 100px;
     padding-bottom: 100px;
   }
 
@@ -852,10 +850,11 @@ main {
 }
 /**
   |============================
-  | Made styles
+  | MADE STYLES
   |============================
 */
 .made {
+  margin-bottom: 128px;
 }
 .made-container {
   display: flex;
@@ -925,6 +924,18 @@ main {
     height: 400px;
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  .made-container {
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 20px;
+  }
+  .made-left-side {
+    margin-bottom: 0;
+  }
+}
 /**
   |============================
   | Products styles
@@ -932,7 +943,6 @@ main {
 */
 .products-list {
   --items: 1;
-
   text-align: center;
 }
 .container.products-content {
@@ -961,6 +971,9 @@ main {
   }
 }
 @media only screen and (min-width: 1200px) {
+  .section {
+    padding-top: 0;
+  }
   .products-list {
     flex-basis: calc((100% - 54px) / 4);
   }
